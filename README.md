@@ -107,12 +107,10 @@ This explicit mapping model is the core design choice. `enumix` does not inspect
 Example:
 
 ```cpp
-ENUM_MAPPING(InfeedRejectionReason,
-    std::pair{E::NoReason,              "NoReason"sv},
-    std::pair{E::RejectedBySystem,      "RejectedBySystem"sv},
-    std::pair{E::EmptyRecipeId,         "EmptyRecipeId"sv},
-    std::pair{E::NotFoundItemWorkOrder, "NotFoundItemWorkOrder"sv},
-    std::pair{E::InvalidMemberId,       "InvalidMemberId"sv}
+ENUM_MAPPING(Color,
+    std::pair{E::Red, "Red"sv},
+    std::pair{E::Green, "Green"sv},
+    std::pair{E::Blue, "Blue"sv}
 );
 ```
 
